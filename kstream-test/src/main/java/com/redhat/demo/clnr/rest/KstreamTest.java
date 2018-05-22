@@ -6,11 +6,11 @@ import org.apache.kafka.streams.kstream.KStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Stateless;
+import javax.enterprise.context.ApplicationScoped;
 
-@Stateless
+@ApplicationScoped
 @KafkaConfig(bootstrapServers = "#{KAFKA_SERVICE_HOST}:#{KAFKA_SERVICE_PORT}")
-public class KstreamTest {
+public class KstreamT est {
 
     Logger logger = LoggerFactory.getLogger(KstreamTest.class);
 
