@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kstream.test.out
+  labels:
+    strimzi.io/kind: topic
+    strimzi.io/cluster: my-cluster
+data:
+  name: kstream.test.out
+  partitions: "2"
+  replicas: "1"
+
